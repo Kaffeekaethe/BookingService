@@ -1,0 +1,5 @@
+SELECT * FROM partial_booking JOIN booking 
+ WHERE partial_booking.booking_id = booking.id 
+ AND train_connection_id = ?
+ AND departure_time > ?
+ AND departure_time < ?;
